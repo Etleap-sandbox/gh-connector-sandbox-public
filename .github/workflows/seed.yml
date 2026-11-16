@@ -1,0 +1,8 @@
+name: seed
+on: [pull_request, push]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "::warning file=README.md,line=1::Seed annotation"
+      - run: echo "::notice file=README.md,line=1::Seed notice"
